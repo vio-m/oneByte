@@ -1,0 +1,109 @@
+.comments {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+.add-comment-form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.2em;
+    width: 99%;
+    margin: 0 auto;
+
+}
+.add-comment-form:hover {
+    box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
+}
+.add-comment-form textarea {
+    width: 100%;
+    max-height: 200px;
+    overflow: scroll;
+    padding: 12px 20px;
+    box-sizing: border-box;
+    border: none;
+    border-radius: 5px;
+    resize: none;
+}
+.add-comment-form textarea:focus {
+    background-color: #f2f2f2;
+    outline: none;
+}
+.add-comment-button {
+    width: 100%;
+    padding: 8px 12px 8px 12px;
+    display: flex;
+    justify-content: flex-end;
+}
+.add-comment-button button {
+    width: 100px;
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    border-radius: 1px;
+    font-size: 14px;
+    font-weight: 900;
+    cursor: pointer;
+    position: relative;
+    bottom: 5px;
+}
+.add-comment-button button:hover {
+    background-color: black;
+    color: white;
+}
+.comments-list-container {
+    height: 450px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 0.2em;
+    overflow: auto;
+    scrollbar-width: none; /* Firefox */
+        &::-webkit-scrollbar {
+        background: transparent; /* Chrome/Safari/Webkit */
+        width: 0px;
+      }
+
+}
+.comments-box {
+    display: flex;
+    flex-direction: column;
+    width: 99%;
+    margin: 0 auto;
+    border-bottom: 1px solid #ccc;
+}
+.comments-box:hover {
+    box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
+}
+.comments-user-and-time {
+    padding-top: 12px;
+    margin-left: 12px;
+    font-weight: 900;
+}
+.comments-text {
+    width: 100%;
+    padding: 0px 12px 0px 12px;
+    margin: 12px auto;
+}
+.comments-buttons-bar {
+    width: 100%;
+    padding: 8px 12px 8px 12px;
+    display: flex;
+    justify-content: flex-end;
+    gap: 0.2em;
+
+}
+.comments-buttons-bar button {
+    width: 100px;
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    border-radius: 1px;
+    font-size: 14px;
+    font-weight: 900;
+    cursor: pointer;
+    position: relative;
+    bottom: 5px;
+}
+.comments-buttons-bar button:hover {
+    background-color: black;
+    color: white;
+}

@@ -1,0 +1,224 @@
+    /* CAROUSEL */
+
+.container {
+    min-width: 100vw;
+    height: 100vh;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
+}
+.carousel-item {
+    width: 100%;
+    height: 100vh;
+}
+.teaser {
+    height: 100vh;
+    text-align: center;
+    color: white;
+}
+.teaser img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.teaserTitle {
+    font-size: 24px;
+    font-weight: 900;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow:
+    1px  1px 2px black,
+    1px -1px 2px black,
+   -1px  1px 2px black,
+   -1px -1px 2px black;
+}
+.teaserDescription {
+    font-weight: 400;
+    position: absolute;
+    top: 85%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow:
+    1px  1px 2px black,
+    1px -1px 2px black,
+   -1px  1px 2px black,
+   -1px -1px 2px black;
+}
+
+    /* RECIPES */
+
+@media (max-width: 320px) {
+    .recipe-card-container {
+        grid-template-columns: repeat(1, 1fr) !important;
+        width: 90vw !important;
+        margin-top: 2em !important;
+    }
+    .recipe-wrapper {
+        width: 80vw !important;
+    }
+    .social-bar {
+        height: 200px !important;
+    }
+    .social-bar button {
+        right: 50px;
+    }
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+    .recipe-card-container {
+        grid-template-columns: repeat(2, 1fr) !important;
+        width: 90% !important;
+        margin-top: 2em !important;
+        grid-column-gap: 3em !important;
+        grid-row-gap: 3em !important;
+    }
+    .recipe-wrapper {
+        width: 35vw !important;
+    }
+    .social-bar {
+        height: 150px !important;
+    }
+    .social-bar button {
+        right: 50px;
+    }
+}
+
+        /* RECIPE-PAGE */
+
+.recipes-page {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 105vh;
+    padding-top: 75px;
+}
+
+    /* SEARCH-BAR */
+
+.recipe-category-container {
+    position: fixed;
+    z-index: 9;
+    top: 70px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 65px;
+    margin-top: 1em;
+    background: white;
+    box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
+}
+.recipe-category-bar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: white;
+    height: 100%;
+    gap: 0.5em;
+}
+.recipe-category-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-x: scroll;
+    scrollbar-width: thin;
+    margin-left: -2em;
+    padding-left: 2em;
+}
+.hide {
+    opacity: 0;
+}
+.recipe-category-buttons button {
+    border: none;
+    color: #333;
+    font-weight: 900;
+    background-color: white;
+}
+.recipe-category-buttons button:hover {
+    color: orange;
+
+}
+
+        /* CARD */
+
+.recipe-card-container {
+    padding-top: 3em;
+    padding-bottom: 3em;
+    max-width: 50em;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    grid-column-gap: 3em;
+    grid-row-gap: 3em;
+}
+.recipe-wrapper {
+    margin: 0 auto;
+    max-width: 18em;
+    height: 30vh;
+}
+.recipe-card {
+    /*object-position: top center;*/
+    transition: transform 0.3s;
+    max-width: 100%;
+    max-height: 30vh;
+    overflow: scroll;
+    scrollbar-width: none;
+    padding-bottom: 0.5vh;
+    box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
+}
+::-webkit-scrollbar {
+    display:none;/* Hide scrollbar for Chrome, Safari and Opera */
+}
+.recipe-card:hover {
+    max-height: 34vh;
+    transform: translateY(-1em);
+    box-shadow: 3px 8px 8px rgba(0,0,0,0.3);
+}
+.recipe-card a {
+    text-decoration: none;
+}
+.recipe-img {
+    width: 100%;
+    height: 150px;
+    object-fit: cover;
+}
+.recipe-title {
+    padding-left: 0.2em;
+    font-size: 2em;
+    font-weight: 900;
+    color: black;
+}
+.recipe-description {
+    padding-left: 0.2em;
+    font-weight: 300;
+}
+.recipe-category {
+    padding-left: 0.2em;
+    font-weight: 900;
+    font-style: italic;
+}
+.social-bar {
+    display: flex;
+    justify-content: space-around;
+    background-image: linear-gradient(to top, rgba(211,211,211,0.5), rgba(255,0,0,0));
+    height: 100px;
+}
+.social-bar > div > div{
+    position: relative;
+    top: 50px;
+}
+.social-bar button {
+    position: relative;
+    top: 50px;
+    width: 33px;
+    height: 33px;
+    background-color: black;
+    color: white;
+    border: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 900;
+    cursor: pointer;
+}
+
+
+

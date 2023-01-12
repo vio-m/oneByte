@@ -1,0 +1,116 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+.nav * {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.nav {
+    height: 55px;
+    width: 100%;
+    background: transparent;
+    color: grey;
+    font-size: 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    gap: 2rem;
+    padding: 0 1rem;
+    position: fixed;
+    top: 0; /* required */
+    z-index: 9999; /* required */
+}
+.nav.active {
+    background: #333;
+    color: white;
+}
+.nav-title {
+    color: orange;
+    font-size: 2rem;
+    text-decoration: none;
+    padding: 3px;
+}
+.nav-title:hover {
+    color: orange;
+}
+.nav-title img {
+    padding: 3px;
+    width: 50px;
+    height: 50px;
+}
+.nav-title:hover img {
+    padding: 0px;
+}
+.nav-links {
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+.nav-links a {
+    color: inherit;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: .25rem;
+    border-bottom: 4px solid transparent;
+}
+.nav-links a:hover {
+    color: black;
+    background-color: #777;
+}
+.nav-links .active {
+    text-decoration:none;
+    border-bottom: 4px solid orange;
+}
+.nav-links > a > img {
+    width: 25px;
+    height: 25px;
+    margin-left: 10px;
+}
+.nav-btn {
+    font-size: 1.5rem;
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    visibility: hidden;
+    opacity: 0;
+}
+
+@media only screen and (max-width: 640px) {
+  .nav-btn {
+    visibility: visible;
+    opacity: 1;
+  }
+  .nav-links {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    background-color: #ccc;
+    transition: 1s;
+    transform: translateY(-100vh);
+  }
+  .toggle-show {
+    transform: none;
+  }
+  .nav-close-btn {
+    position: absolute;
+    top: 0.8rem;
+    right: 1rem;
+  }
+
+}
+/*
+
+*/
+

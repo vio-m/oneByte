@@ -1,0 +1,19 @@
+li {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+button {
+    border: none;
+    color: inherit;
+    background-color: inherit;
+}
+
+.nav li.active {
+    text-decoration:none;
+    border-bottom: 4px solid orange;
+}
+
+
+

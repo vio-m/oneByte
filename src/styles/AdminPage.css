@@ -1,0 +1,9 @@
+.admin * {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.admin {
+    padding-top: 55px;
+}
+.admin header {
+    margin-top: 55px;
+}

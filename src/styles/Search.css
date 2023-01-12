@@ -1,0 +1,35 @@
+.searchbar {
+    position: relative;
+    min-width: 100px;
+}
+.searchbar input{
+    width: 80%;
+    padding-right: 30px;
+    outline: none;
+}
+.searchbar button {
+    border: none;
+    background-color: white;
+    width: 2em;
+    margin-left: -30px;
+    opacity: 0.5;
+}
+.searchbar input {
+    border: 0.5px solid #777;
+}
+.searchbar input:hover {
+    border: 0.5px solid #777;
+    box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
+}
+.searchbar button:hover {
+    background-color: white;
+}
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}

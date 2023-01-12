@@ -1,0 +1,87 @@
+.detail {
+    padding-top: 55px;
+    min-width: 100vw;
+    min-height: 105vh;
+    display: flex;
+    justify-content: center;
+}
+.detail article {
+    width: 50%;
+}
+.detail img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+.detail-title {
+    font-size: 30px;
+    color: black;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 6px 10px;
+}
+.detail-review-bar {
+    padding: 6px 10px;
+    font-weight: 900;
+}
+.detail-subtitle {
+    font-size: 22px;
+    color: black;
+    font-weight: 900;
+    letter-spacing: 3px;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 6px 10px;
+}
+.detail-description {
+    padding: 10px 0px 10px 0px;
+    font-size: 18px;
+    font-weight: 300;
+}
+.detail-description li {
+    margin: 10px;
+    padding-left: 10px;
+}
+.detail-ingredients {
+    padding: 10px 0px 10px 0px;
+    font-size: 18px;
+    font-weight: 300;
+}
+.detail-directions {
+    white-space: pre-wrap;
+    padding: 10px 0px 10px 0px;
+    font-size: 18px;
+    font-weight: 300;
+}
+.detail-cat {
+    font-weight: 900;
+    font-style: italic;
+    padding: 30px 0px 40px 0px;
+}
+.button-container {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 10px;
+}
+.button-container button {
+    width: 100px;
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+    margin: 2px;
+    border-radius: 1px;
+    font-size: 14px;
+    font-weight: 900;
+    cursor: pointer;
+}
+.button-container button:hover {
+    background-color: black;
+    color: white;
+}
+#active {
+    background-color: black;
+    color: white;
+}
+
+
+
